@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Boilerplate</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body class="bg-[#EEEEEE]">
+    <!-- Carousel Banner Start -->
+    <section
+      class="mx-auto container pt-2 flex flex-col md:flex-row lg:flex-row justify-center space-x-4"
+    >
+      <div class="w-full md:w-6/12 lg:w-6/12">
+        <div class="carousel">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="./assets/images/image1.jpg" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="./assets/images/image2.jpg" class="w-full"/>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="./assets/images/image3.jpg" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="rounded-lg flex flex-col justify-start md:flex-col lg:flex-col">
+          <div class="rounded-lg bg-[#F9F9F9] flex flex-row  md:flex-row  lg:flex-row">
+            <img class="w-24 rounded-lg" src="./assets/images/profile.jpg" alt="" srcset="" />
+            <div class="flex flex-col justify-center space-x-5 ">
+              <h3>চেয়ারম্যান</h3>
+              <h4>আব্দুল্লাহ জাহাঙ্গীর</h4>
+              <a href="#" target="_blank">তাঁর সম্পর্কে পড়ুন...</a>
+            </div>
+          </div>
+          <div class="rounded-lg  bg-[#F9F9F9]   flex flex-row md:flex-row mt-2 space-y-28 lg:flex-row">
+            <img class="w-24 rounded-lg" src="./assets/images/profile.jpg" alt="" srcset="" />
+            <div>
+              <h3>চেয়ারম্যান</h3>
+              <h4>আব্দুল্লাহ জাহাঙ্গীর</h4>
+              <a href="#" target="_blank">তাঁর সম্পর্কে পড়ুন...</a>
+            </div>
+          </div>
+          <div class="w-full flex justify-center gap-3">
+            <button class="btn bg-[#F9F9F9]  mt-2 rounded"><i class='bx bxs-time-five' ></i>ক্লাস রুটিন</button>
+            <button class="btn bg-[#F9F9F9]  mt-2 rounded"><i class='bx bx-notepad'></i>ফলাফল</button>
+          </div>
+          <div class="text-center">
+            <h3>স্থাপিত সন - ১৯৭০ খ্রিঃ</h3>
+            <h4>EIIN নাম্বার - 107354</h4>
+            <h4>টেলিফোন - 0164736383</h4>
+          </div>
+        </div>
+    
+    </section>
+    <!-- Carousel Banner End -->
+    <script src="./main.js"></script>
+  </body>
+</html>
