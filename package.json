@@ -6,7 +6,8 @@
   "scripts": {
     "dev:tailwind": "npx tailwindcss -i ./src/input.css -o ./src/style.css --watch",
     "dev:server": "node ./node_modules/live-server/live-server.js --port=9000 ./src",
-    "start": "concurrently \"yarn dev:tailwind\" \"yarn dev:server\""
+    "start": "concurrently \"npx tailwindcss -i ./src/input.css -o ./src/style.css --watch\" \"node ./node_modules/live-server/live-server.js --port=9000 ./src\"",
+    "build": "tailwindcss build styles.css -i input.css"
   },
   "keywords": [],
   "author": "Ramzan Ali",

@@ -3,79 +3,198 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tailwind Boilerplate</title>
+    <title>E_SCHOOL</title>
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
     <link href="./style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="input.css" />
   </head>
   <body class="bg-[#EEEEEE]">
     <!-- Carousel Banner Start -->
-    <section
-      class="mx-auto container pt-2 flex flex-col md:flex-row lg:flex-row justify-center space-x-4"
-    >
-      <div class="w-full md:w-6/12 lg:w-6/12">
-        <div class="carousel">
-          <div id="slide1" class="carousel-item relative w-full">
-            <img src="./assets/images/image1.jpg" class="w-full" />
-            <div
-              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
-            >
-              <a href="#slide3" class="btn btn-circle">❮</a>
-              <a href="#slide2" class="btn btn-circle">❯</a>
+    <section>
+      <div
+        class="mx-auto slider_profile_wrapper flex flex-col md:flex-row lg:flex-row justify-center space-x-4"
+      >
+        <div class="slider_main_wrapper relative md:w-6/12 lg:w-6/12">
+          <div class="swiper swiperMy mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./assets/images/image1.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/image2.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/image3.jpg" />
+              </div>
             </div>
-          </div>
-          <div id="slide2" class="carousel-item relative w-full">
-            <img src="./assets/images/image2.jpg" class="w-full"/>
-            <div
-              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
-            >
-              <a href="#slide1" class="btn btn-circle">❮</a>
-              <a href="#slide3" class="btn btn-circle">❯</a>
+            <div class="btn_carousel">
+              <div class="swiper-button-next button-carousel-1"></div>
+              <div class="swiper-button-prev button-carousel-2"></div>
             </div>
-          </div>
-          <div id="slide3" class="carousel-item relative w-full">
-            <img src="./assets/images/image3.jpg" class="w-full" />
-            <div
-              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
-            >
-              <a href="#slide2" class="btn btn-circle">❮</a>
-              <a href="#slide1" class="btn btn-circle">❯</a>
-            </div>
+            <img
+              class="overfollow-image"
+              src="./assets/images/grass.png"
+              alt=""
+            />
           </div>
         </div>
-      </div>
-        <div class="rounded-lg flex flex-col justify-start md:flex-col lg:flex-col">
-          <div class="rounded-lg bg-[#F9F9F9] flex flex-row  md:flex-row  lg:flex-row">
-            <img class="w-24 rounded-lg" src="./assets/images/profile.jpg" alt="" srcset="" />
-            <div class="flex flex-col justify-center space-x-5 ">
-              <h3>চেয়ারম্যান</h3>
+        <div class="rounded-lg mt-2 flex flex-col md:flex-col lg:flex-col">
+          <div
+            class="bg-[#F9F9F9] space-x-5 rounded-lg mt-2 flex flex-row md:flex-row lg:flex-row"
+          >
+            <img
+              class="w-24 rounded-lg"
+              src="./assets/images/profile.jpg"
+              alt=""
+              srcset=""
+            />
+            <div class="flex flex-col text-justify">
+              <h1 class="title_name">চেয়ারম্যান</h1>
               <h4>আব্দুল্লাহ জাহাঙ্গীর</h4>
               <a href="#" target="_blank">তাঁর সম্পর্কে পড়ুন...</a>
             </div>
           </div>
-          <div class="rounded-lg  bg-[#F9F9F9]   flex flex-row md:flex-row mt-2 space-y-28 lg:flex-row">
-            <img class="w-24 rounded-lg" src="./assets/images/profile.jpg" alt="" srcset="" />
-            <div>
-              <h3>চেয়ারম্যান</h3>
-              <h4>আব্দুল্লাহ জাহাঙ্গীর</h4>
+          <div
+            class="mt-2 space-x-5 rounded-lg bg-[#F9F9F9] flex flex-row md:flex-row lg:flex-row"
+          >
+            <img
+              class="w-24 rounded-lg"
+              src="./assets/images/profile2.jpg"
+              alt=""
+              srcset=""
+            />
+            <div class="flex flex-col text-justify">
+              <h1 class="title_name">প্রধান শিক্ষক</h1>
+              <h4>আব্দুল কাদের জিলানী</h4>
               <a href="#" target="_blank">তাঁর সম্পর্কে পড়ুন...</a>
             </div>
           </div>
-          <div class="w-full flex justify-center gap-3">
-            <button class="btn bg-[#F9F9F9]  mt-2 rounded"><i class='bx bxs-time-five' ></i>ক্লাস রুটিন</button>
-            <button class="btn bg-[#F9F9F9]  mt-2 rounded"><i class='bx bx-notepad'></i>ফলাফল</button>
+          <div class="mt-2 text-center w-full btn-group btn-group-vertical lg:btn-group-horizontal">
+            <button class=" btn  bg-[#F9F9F9] rounded">
+              <img
+                class="w-12"
+                src="./assets/images/class-routine.png"
+                alt=""
+                srcset=""
+              />ক্লাস রুটিন
+            </button>
+            <button class="btn bg-[#F9F9F9] rounded">
+              <img
+                class="w-12"
+                src="./assets/images/ssc-results.png"
+                alt=""
+                srcset=""
+              />ফলাফল
+            </button>
           </div>
-          <div class="text-center">
+          <div class="text-center mt-2 established_card">
             <h3>স্থাপিত সন - ১৯৭০ খ্রিঃ</h3>
             <h4>EIIN নাম্বার - 107354</h4>
             <h4>টেলিফোন - 0164736383</h4>
           </div>
         </div>
-    
+      </div>
     </section>
     <!-- Carousel Banner End -->
+    <!-- Notice Board Start -->
+    <section class="notice_box">
+      <div class="container mx-auto pb-20 flex flex-col md:flex-row gap-5 lg:flex-row justify-center">
+        <div class="w-full md:w-[480px] lg:w-[480px] py-20">
+          <div class="notice">
+            <h3 class="text-center">সর্বশেষ নোটিশ</h3>
+            <div class="gap-5 px-5 w-full flex flex-col md:flex-row lg:flex-row notices">
+              <div class="date">
+                <span class="rounded-lg text-right">2023-09-15</span>
+              </div>
+              <div>
+                <a href="#" target="_blank">ছাত্রীদের দ্বিতীয় সেমেস্টার পরীক্ষা</a>
+              </div>
+            </div>
+            <div class="gap-5 px-5 w-full flex flex-col md:flex-row lg:flex-row notices">
+              <div class="date">
+                <span class="rounded-lg text-right">2023-09-15</span>
+              </div>
+              <div>
+                <a href="#" target="_blank">ছাত্রীদের দ্বিতীয় সেমেস্টার পরীক্ষা</a>
+              </div>
+            </div>
+            <div class="gap-5 px-5 w-full flex flex-col md:flex-row lg:flex-row notices">
+              <div class="date">
+                <span class="rounded-lg text-right">2023-09-15</span>
+              </div>
+              <div>
+                <a href="#" target="_blank">ছাত্রীদের দ্বিতীয় সেমেস্টার পরীক্ষা</a>
+              </div>
+            </div>
+            <div class="gap-5 px-5 w-full flex flex-col md:flex-row lg:flex-row notices">
+              <div class="date">
+                <span class="rounded-lg text-right">2023-09-15</span>
+              </div>
+              <div>
+                <a href="#" target="_blank">ছাত্রীদের দ্বিতীয় সেমেস্টার পরীক্ষা</a>
+              </div>
+            </div>
+           <div class="button">
+            <a href="#" >সকল নোটিশ...</a>
+           </div>
+          </div>
+        </div>
+        <div class="w-full md:w-[480px] lg:w-[480px] notice_teacher">
+          <h2 class="text-center">শিক্ষক বানী</h2>
+          <div class="teachers_speech">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide flex flex-col md:flex-row lg:flex-row">
+                  <img class="teachers" src="./assets/images/1694790194_4799195227508664.jpg" alt="" srcset="" />
+                  <div class="title">
+                    <h4>Tasnim Akhtar</h4>
+                    <p>সহকারী শিক্ষক</p>
+                    <p>Tuesday, September 26, 2023 | বানী</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img class="teachers" src="./assets/images/1694398755_19.jpg" alt="" srcset="" />
+                  <div class="title">
+                    <h4>Mohammad Rahmat</h4>
+                    <p>শিক্ষক</p>
+                    <p>Tuesday, September 26, 2023 | বানী</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="blockQoute">
+          <blockquote>
+            বানী - 2বানী - 2বানী - 2বানী - 2বানী - 2বানী - 2বানী - 2বানী - 2বানী - 2বানী - 2বানী - 2বানী
+          </blockquote>
+        </div>
+      </div>
+    </div>
+    </section>
+    <!-- Notice Board End -->
+
+    <!-- JS SCRIPT -->
     <script src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      });
+    </script>
   </body>
 </html>
