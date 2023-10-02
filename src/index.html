@@ -18,10 +18,9 @@
   <body class="bg-[#EEEEEE]">
     <!-- Carousel Banner Start -->
     <section>
-      <div
-        class="mx-auto flex flex-col md:flex-row lg:flex-row justify-center space-x-4"
+      <div class="container mx-auto px-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 space-x-5"
       >
-        <div class="slider_main_wrapper relative md:w-6/12 lg:w-6/12">
+        <div class="slider_main_wrapper mt-4 relative">
           <div class="swiper swiperMy mySwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -36,7 +35,7 @@
             </div>
             <div class="btn_carousel">
               <div class="swiper-button-next button-carousel-1"></div>
-              <div class="swiper-button-prev button-carousel-2"></div>
+              <div class="swiper-button-prev button-carousel-1"></div>
             </div>
             <img
               class="overfollow-image"
@@ -62,8 +61,7 @@
             </div>
           </div>
           <div
-            class="mt-2 space-x-5 rounded-lg bg-[#F9F9F9] flex flex-row md:flex-row lg:flex-row"
-          >
+            class="mt-2 space-x-5 rounded-lg bg-[#F9F9F9] flex flex-row md:flex-row lg:flex-row">
             <img
               class="w-24 rounded-lg"
               src="./assets/images/profile2.jpg"
@@ -76,8 +74,8 @@
               <a href="#" target="_blank">তাঁর সম্পর্কে পড়ুন...</a>
             </div>
           </div>
-          <div class="mt-2 text-center w-full btn-group btn-group-vertical lg:btn-group-horizontal">
-            <button class=" btn  bg-[#F9F9F9] rounded">
+          <div class="mt-2 text-center w-full btn-group btn-group-vertical lg:btn-group-horizontal px-5 gap-5">
+            <button class="w-full md:w-2/4 lg:w-2/4 btn  bg-[#F9F9F9] rounded">
               <img
                 class="w-12"
                 src="./assets/images/class-routine.png"
@@ -85,7 +83,7 @@
                 srcset=""
               />ক্লাস রুটিন
             </button>
-            <button class="btn bg-[#F9F9F9] rounded">
+            <button class="w-full md:w-2/4 lg:w-2/4 btn bg-[#F9F9F9] rounded">
               <img
                 class="w-12"
                 src="./assets/images/ssc-results.png"
@@ -104,8 +102,8 @@
     </section>
     <!-- Carousel Banner End -->
     <!-- Notice Board Start -->
-    <section class="notice_box">
-      <div class="container mx-auto px-24 flex flex-col md:flex-row gap-5 lg:flex-row justify-center">
+    <section>
+      <div class="container mx-auto px-24 flex flex-col md:flex-row gap-5 lg:flex-row justify-center mt-4">
         <div class="w-full md:w-2/4 lg:w-2/4 ">
           <div class="notice">
             <h3 class="text-center">সর্বশেষ নোটিশ</h3>
@@ -183,8 +181,8 @@
     
     <!-- Institute History And Established Year Start -->
       <section>
-        <div class="container px-24 mx-auto flex flex-col md:flex-row lg:flex-row justify-center">
-          <div class="container text-justify flex flex-col justify-center w-full md:w-2/4  lg:w-2/4">
+        <div class="container mx-auto px-24 flex flex-col md:flex-row lg:flex-row justify-center mt-4">
+          <div class="text-justify flex flex-col justify-center w-full md:w-2/4  lg:w-2/4 institute_history">
             <h2>
               <span>
                 <i class='bx bx-question-mark' ></i>
@@ -199,19 +197,51 @@
             </p>
             <a href="#" target="_blank">আরও পড়ুন...</a>
           </div>
-          <div class="w-full md:w-2/4 lg:w-2/4">
-            <img src="./assets/images/school-photo.jpg" alt="" srcset="">
+          <div class="w-full md:w-2/4 lg:w-2/4 border-rounded bg-slate-50 border-solid border-2">
+            <img class="p-5" src="./assets/images/school-photo.jpg" alt="" srcset="">
           </div>
         </div>
       </section>
     <!-- Institute History And Established Year End -->
       <!-- About Information Link Card  start-->
       <section>
-        <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-5">
-          <div>01</div>
-          <div>09</div>
-          <div>01</div>
-          <div>01</div>
+        <div class="container mx-auto px-24 mt-4 grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-5">
+          <div class="bg-slate-50">
+            <h3 class="bg-lime-200 text-center text-2xl p-3">আমাদের সম্পর্কে</h3>
+            <ul>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+            </ul>
+          </div>
+          <div class="bg-slate-50">
+            <h3 class="bg-lime-200 text-center text-2xl p-3">প্রশাসন</h3>
+            <ul>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+            </ul>
+          </div>
+          <div class="bg-slate-50">
+            <h3 class="bg-lime-200 text-center text-2xl p-3">প্রতিষ্ঠান সম্বলিত তথ্য</h3>
+            <ul>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+            </ul>
+          </div>
+          <div class="bg-slate-50">
+            <h3 class="bg-lime-200 text-center text-2xl p-3">একাডেমিক তথ্য
+            </h3>
+            <ul>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+            </ul>
+          </div>
       </div>
       </section>
       <!-- About Information Link Card  End-->
