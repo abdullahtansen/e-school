@@ -104,7 +104,7 @@ margin-top: 10px;
 
 .notice{
   background-color: white;
-  padding: 10px;
+  padding-bottom: 8px;
 }
 .notice h3{
     font-size: 22px;
@@ -125,6 +125,7 @@ margin-top: 10px;
   font-size: 18px;
   margin-top: 15px;
   padding: 10px;
+  margin-left: 5px;
   width: max-content;
   border-radius: 10px;
 }
@@ -155,6 +156,10 @@ margin-top: 10px;
   display: flex;
   justify-content: start;
 }
+.notice_teacher{
+  background: linear-gradient(260deg, #66bb65, #9cdba4, #67c267);
+  
+}
 .notice_teacher h2{
   font-size: 22px;
   font-weight: bold;
@@ -170,15 +175,52 @@ margin-top: 10px;
 
 }
 .swiper-slide .teachers{
-  width: 100px;
+  height: 140px;
+  margin-top: 10px;
+  width: 120px;
+}
+.swiper-wrapper{
+  height: 150px;
 }
 .swiper-slide h4, p{
   text-align: left;
 }
 .title{
   margin-bottom: 52px;
+  
 }
 .blockQoute{
-  border-top: #47970e;
-  background: linear-gradient(260deg, #197a17, #ffffff, #167716);
+  margin: 8px;
+  text-align: center;
+  padding: 10px;
+  height: 80px;
+}
+.blockQoute i{
+  font-size: 18px;
+  color: #197a17;
+  font-weight: 700;
+}
+.school{
+  padding: 10px;
+  text-align: center;
+}
+.school img{
+  border: 2px solid white;
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+}
+
+.institute_history{
+  font-size: 24px;
+  text-align: center;
+}
+.institute_history i{
+  background-color: orangered;
+  border-radius: 50px;
+  font-size: 32px;
+  color: white;
+}
+.institute_history p{
+  font-size: 20px;
 }
