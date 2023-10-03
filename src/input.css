@@ -186,7 +186,6 @@ margin-top: 10px;
 }
 .title{
   margin-bottom: 52px;
-  
 }
 .blockQoute{
   margin: 8px;
@@ -199,7 +198,7 @@ margin-top: 10px;
   color: #197a17;
   font-weight: 700;
 }
-.school{
+/* .school{
   padding: 10px;
   text-align: center;
 }
@@ -208,7 +207,7 @@ margin-top: 10px;
   width: 100%;
   padding: 10px;
   background-color: white;
-}
+} */
 
 .institute_history{
   font-size: 24px;
@@ -222,4 +221,23 @@ margin-top: 10px;
 }
 .institute_history p{
   font-size: 20px;
+}
+
+.download_btn a{
+  background-color: rgb(13, 188, 13);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.students{
+  width: 230px;
+  height: 370px;
+  padding: 2px;
+}
+.students figure img{
+  height:300px;
+  padding: 5px;
+  border-radius: 30px;
 }
